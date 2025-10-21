@@ -1,26 +1,8 @@
-const path = require('path');
-
 module.exports = {
-    entry: './app.js',
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/, // Transpile JavaScript files
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            }
-        ]
-    },
-    resolve: {
-        extensions: ['.js']
-    }
+  target: 'web',
+  libraryTarget: 'umd',
+  externals: {
+    'babylonjs': 'BABYLON'
+  },
+  // other configurations...
 };
