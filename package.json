@@ -1,1 +1,29 @@
-{\n  "name": "2d-jumping-game",\n  "version": "1.0.0",\n  "description": "A 2D jumping game using Babylon.js",\n  "main": "index.js",\n  "scripts": {\n    "start": "webpack serve --open",\n    "build": "webpack"\n  },\n  "dependencies": {\n    "babylonjs": "^5.0.0"\n  },\n  "devDependencies": {\n    "webpack": "^5.0.0",\n    "webpack-cli": "^4.0.0",\n    "webpack-dev-server": "^3.0.0"\n  },\n  "author": "",\n  "license": "ISC"\n}
+{
+  "name": "2DBouncing",
+  "version": "1.0.0",
+  "description": "A 2D jumping platformer game using Babylon.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "babylonjs": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^9.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "keywords": [
+    "babylon.js",
+    "platformer",
+    "game",
+    "javascript"
+  ],
+  "author": "BrownMeth",
+  "license": "MIT"
+}
